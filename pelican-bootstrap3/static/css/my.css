@@ -1,0 +1,24 @@
+.codehilitetable {
+  font-family: "Source Code Pro", monospace !important;
+  font-size: 12px !important;
+  overflow: auto !important;
+  display: block !important;
+  border: solid 1px #d9d9d9 !important;
+  border-radius: 3px !important;
+}
+
+.linenos {
+  border-right: 1px solid #d9d9d9 !important;
+  background: #eee !important;
+  padding: 0.5em 0.8em !important;
+  -webkit-user-select: none !important;
+  -khtml-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+.codehilite {
+  margin: 0 1em !important;
+}
+
