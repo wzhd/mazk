@@ -4,7 +4,7 @@ python:
     - "2.7"
 
 env:
-    - secure: "kAaYDi3YKhqCCA7NIbUiyJfJ784o83hHCfp6v+U1YDC5OS1od8VDF5QeoDug63xqOeiTG+fHeXxzV0+sv21s+wWsDB9CMapTcAeqXUqnmLY/M5EAUmcCIb1n4TnnOe0JBBnxz6aNRWNd1CLvwhI0LV1CxHZnfVoN6UwAZdkJwVU="
+    - secure: "g2pQ8+i73yxCh/F2Kp0RKJNqKAdYV6vqE3ngcXNplH5T5R66jTEzziDTomeYsEjNG80ucVUVwLxBvocbjR4UqSoPYFwbwoyNqoFUd0m11fcp6ibHtWT8RLOQRQVCLm9Xh9elQZMEJPism9HZRb/xQAMoQzm809a2pmb6CkFlN44="
 
 before_install:
     - sudo apt-add-repository ppa:chris-lea/node.js -y
