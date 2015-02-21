@@ -42,10 +42,10 @@ summary: <span class="label label-info">2015/2/21更新</span>博客能自动编
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only" class="fa fa-chevron-left"></span>
+    <span class="sr-only"></span>
   </a>
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only" class="fa fa-chevron-right"></span>
+    <span class="sr-only"></span>
   </a>
 </div>
