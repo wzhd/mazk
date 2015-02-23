@@ -65,7 +65,7 @@ PLUGINS = ["i18n_subsites",
            'twitter_bootstrap_rst_directives',
            "render_math",
            'extract_toc',
-           "sitemap"
+           "sitemap",
            'summary']
 
 USE_LESS = False
