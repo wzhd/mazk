@@ -39,7 +39,8 @@ EXTRA_PATH_METADATA = {
 }
 
 IGNORE_FILES = ['readme.md']
-
+DELETE_OUTPUT_DIRECTORY = True
+OUTPUT_RETENTION = (".git","readme.md")
 PLUGIN_PATHS = ['pelican-plugins']
 THEME = "pelican-bootstrap3"
 
@@ -64,8 +65,7 @@ PLUGINS = ["i18n_subsites",
            'twitter_bootstrap_rst_directives',
            "render_math",
            'extract_toc',
-           'sitemap',
-           'gzip_cache',
+           "sitemap"
            'summary']
 
 USE_LESS = False
@@ -88,7 +88,7 @@ DISPLAY_BREADCRUMBS = True
 DISPLAY_CATEGORY_IN_BREADCRUMBS = True
 CC_LICENSE = "CC-BY-NC-SA"
 DISPLAY_TAGS_INLINE = True
-OUTPUT_SOURCES = True
+OUTPUT_SOURCES = False
 OUTPUT_SOURCES_EXTENSION = '.rst'
 
 DIRECT_TEMPLATES = (('search', 'index', 'categories', 'authors', 'archives',
