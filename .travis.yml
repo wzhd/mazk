@@ -44,5 +44,5 @@ script:
     - git clone --depth 1 https://$GH_TOKEN@github.com/mazk/mazk.github.com output
 
 after_success:
-    -make github
+    - make github
     - echo $Your build has been completed!
