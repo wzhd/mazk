@@ -121,18 +121,18 @@
 
  
 
-            {% if article.series %}
+          {% if article.series %}
             <div class="panel panel-default">
                 <div class="panel-heading">
-                <h4>
-                {% trans index=article.series.index, name=article.series.name %}This is part {{ index }} of the "{{ name }}" series:{% endtrans %}
-                </h4>
+                  <h4>
+                  {% trans index=article.series.index, name=article.series.name %}This is part {{ index }} of the "{{ name }}" series:{% endtrans %}
+                  </h4>
                 </div>
-                <div class="btn-group-vertical btn-group-flat" style="width:100%">
+                <ul class="list-group">
                     {% for part_article in article.series.all %}
-                        <a class="btn btn-{% if part_article == article %}primary{%else%}default{% endif %}" href='{{ SITEURL }}/{{ part_article.url }}' style="text-align:left">{{ part_article.title }}</a>
+                        <li class="list-group-item"><a class="btn btn-{% if part_article == article %}primary{%else%}default{% endif %}" href='{{ SITEURL }}/{{ part_article.url }}' style="text-align:left">{{ part_article.title }}</a></li>
                     {% endfor %}
-                </div>
+                </ul>
             </div>
             {% endif %}
 

@@ -6,7 +6,13 @@ python:
 env:
     - secure: "g2pQ8+i73yxCh/F2Kp0RKJNqKAdYV6vqE3ngcXNplH5T5R66jTEzziDTomeYsEjNG80ucVUVwLxBvocbjR4UqSoPYFwbwoyNqoFUd0m11fcp6ibHtWT8RLOQRQVCLm9Xh9elQZMEJPism9HZRb/xQAMoQzm809a2pmb6CkFlN44="
 
+notifications:
+  email:
+    on_success: always
+    on_failure: always
+
 before_install:
+    - echo $HELLO!
     - sudo apt-add-repository ppa:chris-lea/node.js -y
     - sudo apt-get update
     - sudo apt-get install nodejs ditaa parallel graphviz
@@ -26,9 +32,7 @@ install:
     - echo 'exec java -jar /opt/plantuml/plantuml.jar "$@"' >> plantuml
     - sudo install -m 755 -D plantuml /usr/bin/plantuml
     - plantuml -version
-
     - sudo locale-gen zh_CN.UTF-8
- 
     - locale -a
     - pelican --version
 
@@ -38,4 +42,7 @@ script:
     - git config --global push.default simple
     - git clone --depth 1 https://github.com/farseerfc/pelican-plugins pelican-plugins
     - git clone --depth 1 https://$GH_TOKEN@github.com/mazk/mazk.github.com output
-    - make github
+
+after_success:
+    -make github
+    - echo $Your build has been completed!

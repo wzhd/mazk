@@ -10,7 +10,7 @@ SITEURL = '//' + getenv("SITEURL", default='localhost:8000')
 PATH = 'content'
 TIMEZONE = 'Asia/Shanghai'
 
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = 'zh'
 LOCALE = u'zh_CN.utf8'
 
 DEFAULT_DATE_FORMAT = u"%y年%m月%d日"
@@ -33,7 +33,7 @@ STATIC_PATHS = ['static', 'images', 'uml', 'images/favicon.ico', 'static/CNAME']
 EXTRA_PATH_METADATA = {
     'images/favicon.ico': {'path': 'images/favicon.ico'},
     'images/avatar.jpg': {'path': 'images/avatar.jpg'},
-    'images/favicon.ico': {'path': 'favicon.ico'},
+    'favicon.ico': {'path': 'favicon.ico'},
     'images/robot.txt': {'path': 'robot.txt'},
     'images/readme.md': {'path': 'readme.md'}
 }
@@ -45,12 +45,8 @@ PLUGIN_PATHS = ['pelican-plugins']
 THEME = "pelican-bootstrap3"
 
 
-I18N_SUBSITES = {
-    'en':dict(
-        LOCALE= u'zh_CN.UTF8',
-        SITENAME= "MazkCorner"
-    ),
-}
+I18N_SUBSITES = { }
+
 I18N_UNTRANSLATED_ARTICLES = "remove"
 
 PLUGINS = ["i18n_subsites",
