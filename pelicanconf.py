@@ -5,6 +5,8 @@ from hashlib import md5
 from os import getenv
 
 AUTHOR = 'Mazk'
+AUTHOR_SAVE_AS = False
+AUTHORS_SAVE_AS = False
 SITENAME = "MazkCorner"
 SITEURL = '//' + getenv("SITEURL", default='localhost:8000')
 PATH = 'content'
@@ -29,14 +31,15 @@ TWITTER_USERNAME = 'MaZhengke'
 
 DEFAULT_PAGINATION = 8
 
-STATIC_PATHS = ['static', 'images', 'uml', 'images/favicon.ico', 'static/CNAME']
+STATIC_PATHS = ['extra','images']
+
+import os
 EXTRA_PATH_METADATA = {
-    'images/favicon.ico': {'path': 'favicon.ico'},
-    'images/favicon.ico': {'path': 'images/favicon.ico'},
-    'images/avatar.jpg': {'path': 'images/avatar.jpg'},
-    'favicon.ico': {'path': 'favicon.ico'},
-    'images/robot.txt': {'path': 'robot.txt'},
-    'images/readme.md': {'path': 'readme.md'}
+    os.path.join('images','favicon.ico'): {'path': 'favicon.ico'},
+    os.path.join('images','favicon.ico'): {'path': 'images/favicon.ico'},
+    os.path.join('images','avatar.jpg'): {'path': 'images/avatar.jpg'},
+    os.path.join('extra','robot.txt'): {'path': 'robot.txt'},
+    os.path.join('extra','readme.md'): {'path': 'readme.md'}
 }
 
 IGNORE_FILES = ['readme.md']

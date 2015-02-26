@@ -42,7 +42,12 @@ script:
     - git config --global push.default simple
     - git clone --depth 1 https://github.com/farseerfc/pelican-plugins pelican-plugins
     - git clone --depth 1 https://$GH_TOKEN@github.com/mazk/mazk.github.com output
+    - env SITEURL="mazk.github.io" make html
 
 after_success:
-    - make github
-    - echo $Your build has been completed!
+    - cd output
+    - git add -A
+    - git status -s
+    - git commit -m "update from Travis-CI build #$TRAVIS_BUILD_NUMBER."
+    - git push --quiet
+    - echo $Your_build_has_been_completed!
