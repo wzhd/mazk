@@ -31,6 +31,7 @@ DEFAULT_PAGINATION = 8
 
 STATIC_PATHS = ['static', 'images', 'uml', 'images/favicon.ico', 'static/CNAME']
 EXTRA_PATH_METADATA = {
+    'images/favicon.ico': {'path': 'favicon.ico'},
     'images/favicon.ico': {'path': 'images/favicon.ico'},
     'images/avatar.jpg': {'path': 'images/avatar.jpg'},
     'favicon.ico': {'path': 'favicon.ico'},
