@@ -31,20 +31,18 @@ TWITTER_USERNAME = 'MaZhengke'
 
 DEFAULT_PAGINATION = 8
 
-STATIC_PATHS = ['extra','images']
+STATIC_PATHS = ['extra','images','extra/robot.txt','extra/readme.md','images/favicon.ico']
 
 import os
 EXTRA_PATH_METADATA = {
     os.path.join('images','favicon.ico'): {'path': 'favicon.ico'},
-    os.path.join('images','favicon.ico'): {'path': 'images/favicon.ico'},
-    os.path.join('images','avatar.jpg'): {'path': 'images/avatar.jpg'},
     os.path.join('extra','robot.txt'): {'path': 'robot.txt'},
     os.path.join('extra','readme.md'): {'path': 'readme.md'}
 }
 
 IGNORE_FILES = ['readme.md']
 DELETE_OUTPUT_DIRECTORY = True
-OUTPUT_RETENTION = (".git","readme.md")
+OUTPUT_RETENTION = (".git","readme.md","robot.txt","favicon.ico")
 PLUGIN_PATHS = ['pelican-plugins']
 THEME = "pelican-bootstrap3"
 
