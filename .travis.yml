@@ -44,4 +44,9 @@ script:
     - git clone --depth 1 https://$GH_TOKEN@github.com/mazk/mazk.github.com output
     - env SITEURL="mazk.github.io" make html
 
-after_success: bash deploy.sh
+after_success:
+    - cd output
+    - git add -A
+    - git status -s
+    - git commit -m "update from Travis-CI" 
+    - git push --quiet
