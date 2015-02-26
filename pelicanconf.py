@@ -36,6 +36,7 @@ STATIC_PATHS = ['extra','images','extra/robot.txt','extra/readme.md','images/fav
 import os
 EXTRA_PATH_METADATA = {
     os.path.join('images','favicon.ico'): {'path': 'favicon.ico'},
+    os.path.join('images','favicon.ico'): {'path': 'images/favicon.ico'},
     os.path.join('extra','robot.txt'): {'path': 'robot.txt'},
     os.path.join('extra','readme.md'): {'path': 'readme.md'}
 }
