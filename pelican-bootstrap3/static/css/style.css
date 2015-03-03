@@ -276,6 +276,17 @@ figure.floatcenter, .align-center {
     user-select: none;
 }
 
-
-
-
+#dsq-content #dsq-authenticate .dsq-login-buttons {
+background: none !important;
+background-image: none !important;
+margin-bottom: 0 !important;
+}
+#dsq-subscribe a {
+display: none !important;
+}
+#dsq-content #dsq-global-toolbar {
+display: none !important;
+}
+#dsq-sort-by {
+display: none !important;
+}
