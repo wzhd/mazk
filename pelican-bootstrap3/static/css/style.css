@@ -276,17 +276,61 @@ figure.floatcenter, .align-center {
     user-select: none;
 }
 
-#dsq-content #dsq-authenticate .dsq-login-buttons {
-background: none !important;
-background-image: none !important;
-margin-bottom: 0 !important;
+#ds-reset .ds-avatar img {
+  width: 40px !important;
+  height: 40px !important;
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  border-radius: 20px !important;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -moz-transition: -moz-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
 }
-#dsq-subscribe a {
-display: none !important;
+#ds-reset .ds-avatar img:hover {
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
 }
-#dsq-content #dsq-global-toolbar {
-display: none !important;
+
+#ds-reset .ds-powered-by {
+  display: none;
 }
-#dsq-sort-by {
-display: none !important;
+
+#ds-thread {
+  clear: none !important;
+  float: left;
+  margin-top: 0;
+  width: 100%;
 }
+
+#ds-wrapper #ds-reset  .ds-post-likes  {
+display: none !important;}
+/*喜欢按钮*/
+#ds-reset a.ds-like-thread-button {display: none !important;
+border-top: 0px !important;}
+
+
+
+
+
+#ds-thread #ds-reset .ds-post-button { text-shadow: none !important; border: 0 !important; background: #aa759f !important; color: #FFF !important;}
+#ds-thread #ds-reset button:hover, #ds-thread #ds-reset button:active { background: #ffc0cb !important; color: #FFF !important; box-shadow: none !important;}
+#ds-thread #ds-reset button:active { background: #ffc0cb !important;}
+
+#ds-thread #ds-reset .ds-textarea-wrapper, #ds-thread #ds-reset .ds-post-options, #ds-thread #ds-reset .ds-post-button { border-radius: 0 !important;}
+
+.ds-comments-info { display: none !important;}
+
+#ds-thread #ds-reset .ds-login-buttons {
+    border-top: none !important;
+}
+#ds-thread #ds-reset .ds-border-highlight {
+    border-bottom: none !important;
+}
+
+#ds-thread #ds-reset .ds-toolbar {
+    border-bottom:none !important;
+}
+
+#ds-thread #ds-reset li.ds-post-placeholder { display: none !important; }
+#ds-thread #ds-reset li.ds-post { border-top: none !important; }
