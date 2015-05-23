@@ -59,7 +59,7 @@ html:
 
 github:
 	(cd $(OUTPUTDIR) && git checkout master)
-	env SITEURL="mazk.github.io" $(MAKE) html
+	env SITEURL="mazk.net" $(MAKE) html
 	(cd $(OUTPUTDIR) && git add -A && git status -s && git commit -m "update from Travis-CI" && git push --quiet)
 
 clean:
