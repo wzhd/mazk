@@ -42,7 +42,7 @@ script:
     - git config --global push.default simple
     - git clone --depth 1 https://github.com/farseerfc/pelican-plugins pelican-plugins
     - git clone --depth 1 https://$GH_TOKEN@github.com/mazk/mazk.github.com output
-    - env SITEURL="blog.mazk.net" make html
+    - env SITEURL="mazk.net" make html
 
 after_success:
     - cd output
