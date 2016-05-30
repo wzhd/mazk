@@ -26,6 +26,7 @@ TAG_FEED_ATOM = None
 FEED_ATOM = None
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
+FEED_URL = 'feeds/mazk.atom.xml'
 
 TWITTER_USERNAME = 'MaZhengke'
 
